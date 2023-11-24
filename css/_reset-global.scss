@@ -1,0 +1,56 @@
+//reset and global
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: $font-normal;
+  src: url("../assets/fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: $font-bold;
+  src: url("../assets/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: $font-bold-italic;
+  src: url("../assets/fonts/Roboto-MediumItalic.ttf");
+}
+@font-face {
+  font-family: $main-title-font;
+  src: url("../assets/fonts/NanumPenScript-Regular.ttf");
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font-normal;
+}
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.active {
+  color: black;
+}
+.font-bold {
+  font-family: $font-bold;
+}
+.title-font {
+  font-family: $main-title-font;
+}
+img {
+  display: block;
+  width: 100%;
+}

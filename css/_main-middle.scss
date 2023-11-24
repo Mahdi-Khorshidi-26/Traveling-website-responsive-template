@@ -1,0 +1,49 @@
+//main middle
+#main {
+  .part3 {
+    margin-bottom: 20px;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 5px;
+      justify-items: center;
+      align-items: center;
+      .card {
+        width: 100%;
+        min-height: 250px;
+        border-radius: 5px;
+        background-color: rgb(255, 86, 86);
+        position: relative;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+        .text-group {
+          display: flex;
+          justify-content: start;
+          position: absolute;
+          top: 100%;
+          left: 10%;
+          transform: translate(0, -160%);
+          .name {
+            font-family: $font-bold;
+            color: white;
+            margin-right: 10px;
+          }
+          .card-btn {
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: cyan;
+            font-family: $font-bold;
+            font-size: 12px;
+            color: white;
+          }
+        }
+        img {
+          height: 250px;
+          display: block;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+#main {
+  .part2 {
+    margin-top: 50px;
+    .container {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      margin-top: 30px;
+      .title {
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+      .title-description {
+        font-size: 15px;
+        color: #333;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
