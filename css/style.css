@@ -64,6 +64,8 @@ img {
 }
 
 .nav {
+  position: sticky;
+  top: 0;
   background-color: #fff;
   box-shadow: 1px 1px 4px black;
   border-bottom: 0.6px solid gray;
