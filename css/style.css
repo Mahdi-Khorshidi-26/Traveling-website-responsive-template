@@ -421,4 +421,17 @@ img {
 }
 .part5 .video-btn .icon {
   font-size: 10px;
+}
+
+.footer {
+  background-color: #050f30;
+  color: white;
+}
+.footer a {
+  color: white;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 }/*# sourceMappingURL=style.css.map */

@@ -1,26 +1,34 @@
-.footer{
-    .left-group{
-        .logo{
-
+.footer {
+  background-color: #050f30;
+  color: white;
+  a {
+    color: white;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    .left-group {
+      .brand-box {
+        .logo {
         }
-        .address{
-
+        .logo-text {
         }
-        .phone-number{
-
-        }
-        .email{
-
-        }
+      }
+      .address {
+      }
+      .phone-number {
+      }
+      .email {
+      }
     }
-    .right-group{
-        .title{
-
+    .right-group {
+      .title {
+      }
+      .country-links {
+        .country-group {
         }
-        .country-links{
-            .country-group{
-
-            }
-        }
+      }
     }
+  }
 }
