@@ -434,4 +434,48 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.footer .container .left-group {
+  text-align: justify;
+  font-size: 15px;
+  font-family: "roboto-bold";
+}
+.footer .container .left-group .brand-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footer .container .left-group .brand-box .logo {
+  color: crimson;
+  font-size: 80px;
+  margin-right: 10px;
+}
+.footer .container .left-group .brand-box .logo-text {
+  font-family: "roboto-bold";
+  font-size: 40px;
+}
+.footer .container .left-group .text-group {
+  margin-left: 2px;
+}
+.footer .container .left-group .text-group .phone-number {
+  margin: 7px 0px;
+}
+.footer .container .right-group {
+  display: flex;
+  flex-direction: column;
+}
+.footer .container .right-group .title {
+  font-size: 30px;
+  font-family: "roboto-bold";
+  margin-bottom: 5px;
+}
+.footer .container .right-group .country-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+.footer .container .right-group .country-links .country-group li {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

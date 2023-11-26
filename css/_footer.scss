@@ -8,25 +8,55 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
     .left-group {
+      text-align: justify;
+      font-size: 15px;
+      font-family: $font-bold;
       .brand-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
         .logo {
+          color: crimson;
+          font-size: 80px;
+          margin-right: 10px;
         }
         .logo-text {
+          font-family: $font-bold;
+          font-size: 40px;
         }
       }
-      .address {
-      }
-      .phone-number {
-      }
-      .email {
+      .text-group {
+        margin-left: 2px;
+        .address {
+        }
+        .phone-number {
+          margin: 7px 0px;
+        }
+        .email {
+        }
       }
     }
     .right-group {
+      display: flex;
+      flex-direction: column;
       .title {
+        font-size: 30px;
+        font-family: $font-bold;
+        margin-bottom: 5px;
       }
       .country-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
         .country-group {
+          li {
+            margin-bottom: 10px;
+            a {
+            }
+          }
         }
       }
     }
