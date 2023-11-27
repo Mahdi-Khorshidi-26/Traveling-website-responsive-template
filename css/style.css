@@ -63,6 +63,10 @@ img {
   width: 100%;
 }
 
+.menu-bar-icon {
+  display: none;
+}
+
 .nav {
   position: sticky;
   top: 0;
@@ -260,6 +264,7 @@ img {
   font-size: 30px;
 }
 #main .part2 .container .title-description {
+  text-align: center;
   font-size: 15px;
   color: #333;
   margin-bottom: 50px;
@@ -480,4 +485,101 @@ img {
 }
 .footer .container .right-group .country-links .country-group li {
   margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .nav {
+    position: relative;
+  }
+  .nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav .container .menu .menu-list {
+    display: none;
+  }
+  .nav .container .nav-item-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav .container .nav-item-group .menu-bar-icon {
+    margin-right: 25px;
+    width: 100%;
+    display: block;
+    font-size: 45px;
+    font-family: "roboto-normal";
+    cursor: pointer;
+  }
+  .nav .container .nav-item-group .menu-bar-icon:hover {
+    color: crimson;
+  }
+  .nav .container .nav-item-group .search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background-color: #f0f0f0;
+    color: crimson;
+    padding: 20px 0px;
+    padding: 20px 10px;
+  }
+  .nav .container .nav-item-group .search-icon:hover .icon {
+    color: black !important;
+    font-size: 40px !important;
+  }
+  #main .part1 {
+    padding: 10px;
+    background-color: rgb(1, 1, 56);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #main .part1 .main-part1-question {
+    grid-area: title;
+    color: white;
+    font-size: 40px;
+    font-family: "roboto-bold-italic";
+    margin-bottom: 5px;
+  }
+  #main .part1 form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  #main .part1 .main-part1-btn {
+    width: 100%;
+  }
+  #main .part2 .container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  #main .part2 .container .title {
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+  #main .part2 .container .title-description {
+    text-align: center;
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  .part4 .container .text .title {
+    font-size: 25px;
+    margin-bottom: 7px;
+  }
+  .part4 .container .text .title-description {
+    text-align: center;
+    font-size: 13px;
+    color: rgba(236, 236, 236, 0.6509803922);
+    font-family: "roboto-bold";
+  }
+  .part4 .container .btn {
+    margin-left: 90px;
+  }
 }/*# sourceMappingURL=style.css.map */
