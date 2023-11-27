@@ -681,4 +681,9 @@ img {
     margin-top: 20px;
     grid-column: 1/-1;
   }
+}
+@media (max-width: 375px) {
+  .part5 .title {
+    font-size: 90px;
+  }
 }/*# sourceMappingURL=style.css.map */
