@@ -1,0 +1,40 @@
+@media (max-width: 320px) {
+  //   navigation items
+  .nav {
+    .container {
+      .brand-box {
+        display: flex;
+        .logo {
+          font-size: 50px;
+        }
+        .logo-text {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  //   main part1 top section
+  #main {
+    .part1 {
+      .main-part1-question {
+        font-size: 25px;
+      }
+    }
+  }
+  //   main part1 top section title
+  #main {
+    .part2 {
+      .container {
+        .title {
+          font-size: 33px;
+        }
+      }
+    }
+  }
+  //   part5 main bottom
+  .part5 {
+    .title {
+      font-size: 75px;
+    }
+  }
+}

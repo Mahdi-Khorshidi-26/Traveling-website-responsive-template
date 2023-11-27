@@ -686,4 +686,24 @@ img {
   .part5 .title {
     font-size: 90px;
   }
+}
+@media (max-width: 320px) {
+  .nav .container .brand-box {
+    display: flex;
+  }
+  .nav .container .brand-box .logo {
+    font-size: 50px;
+  }
+  .nav .container .brand-box .logo-text {
+    font-size: 30px;
+  }
+  #main .part1 .main-part1-question {
+    font-size: 25px;
+  }
+  #main .part2 .container .title {
+    font-size: 33px;
+  }
+  .part5 .title {
+    font-size: 75px;
+  }
 }/*# sourceMappingURL=style.css.map */
