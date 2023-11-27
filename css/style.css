@@ -582,4 +582,103 @@ img {
   .part4 .container .btn {
     margin-left: 90px;
   }
+}
+@media (max-width: 425px) {
+  #header {
+    min-height: 500px;
+  }
+  #header .container .header-title {
+    font-size: 70px;
+    color: white;
+  }
+  #header .container .header-description {
+    text-align: center;
+    font-size: 22px;
+    color: white;
+  }
+  #main .part1 .main-part1-question {
+    font-size: 30px;
+  }
+  #main .part2 .container .title {
+    font-size: 40px;
+  }
+  #main .part2 .container .title-description {
+    font-size: 13px;
+  }
+  .part3 .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "card1 card1 card1" "card2 card2 card2" "card3 card3 card3" "card4 card4 card4" "card5 card5 card5" "card6 card6 card6";
+  }
+  .part3 .container .card:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .part3 .container .card-1 {
+    grid-area: card1;
+  }
+  .part3 .container .card-2 {
+    grid-area: card2;
+  }
+  .part3 .container .card-3 {
+    grid-area: card3;
+  }
+  .part3 .container .card-4 {
+    grid-area: card4;
+  }
+  .part3 .container .card-5 {
+    grid-area: card5;
+  }
+  .part3 .container .card-6 {
+    grid-area: card6;
+  }
+  .part4 {
+    min-height: 300px;
+  }
+  .part4 .container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "text text text" "input input input" "button button button";
+    grid-gap: 5px;
+  }
+  .part4 .container .text {
+    margin-top: 40px;
+    grid-area: text;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  .part4 .container .text .title {
+    color: white;
+    font-size: 30px;
+  }
+  .part4 .container .text .title-description {
+    text-align: center;
+    font-size: 13px;
+    color: #ececec;
+  }
+  .part4 .container .input-group {
+    grid-area: input;
+    width: 100%;
+    margin-left: 0px;
+    padding: 15px;
+  }
+  .part4 .container .btn {
+    width: 100%;
+    grid-area: button;
+    margin-left: 0px;
+    font-size: 20px;
+  }
+  .part5 .title {
+    font-size: 100px;
+  }
+  .footer .container .left-group {
+    grid-column: 1/-1;
+  }
+  .footer .container .right-group {
+    margin-top: 20px;
+    grid-column: 1/-1;
+  }
 }/*# sourceMappingURL=style.css.map */
