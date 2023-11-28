@@ -93,6 +93,15 @@ img {
   font-size: 55px;
   color: crimson;
 }
+.nav .container .menu-label {
+  display: none;
+}
+.nav .container #menu-check-box {
+  display: none;
+}
+.nav .container .menu-small {
+  display: none;
+}
 .nav .container .menu {
   grid-area: menu;
 }
@@ -495,16 +504,53 @@ img {
     align-items: center;
     justify-content: space-between;
   }
+  .nav .container .menu-label {
+    display: block;
+    transition: 0.5s;
+  }
+  .nav .container #menu-check-box {
+    display: none;
+  }
+  .nav .container .menu-small {
+    display: none;
+    transition: 1s;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+  }
+  .nav .container .menu-small li:not(:last-child) {
+    border-bottom: 1px solid darkgray;
+  }
+  .nav .container .menu-small .active a {
+    color: black;
+  }
+  .nav .container .menu-small li {
+    width: 100%;
+    background-color: #e4e4e4;
+    transition: 0.2s;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav .container .menu-small li:hover {
+    transition: 0.2s;
+    font-size: 18px;
+    opacity: 0.9;
+  }
+  .nav .container .menu-small li a {
+    color: #333;
+  }
   .nav .container .menu .menu-list {
     display: none;
   }
   .nav .container .nav-item-group {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
   }
   .nav .container .nav-item-group .menu-bar-icon {
-    margin-right: 25px;
     width: 100%;
     display: block;
     font-size: 45px;
@@ -514,6 +560,10 @@ img {
   .nav .container .nav-item-group .menu-bar-icon:hover {
     color: crimson;
   }
+  .nav .container .nav-item-group input[type=checkbox]:checked ~ div.menu-small {
+    transition: 0.5s;
+    display: block;
+  }
   .nav .container .nav-item-group .search-icon {
     display: flex;
     align-items: center;
@@ -521,8 +571,8 @@ img {
     font-size: 40px;
     background-color: #f0f0f0;
     color: crimson;
-    padding: 20px 0px;
-    padding: 20px 10px;
+    padding: 20px;
+    padding-inline: 30px;
   }
   .nav .container .nav-item-group .search-icon:hover .icon {
     color: black !important;

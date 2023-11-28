@@ -6,6 +6,47 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      .menu-label {
+        display: block;
+        transition: 0.5s;
+      }
+      #menu-check-box {
+        display: none;
+      }
+      .menu-small {
+        display: none;
+        transition: 1s;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        li:not(:last-child) {
+          border-bottom: 1px solid darkgray;
+        }
+        .active {
+          a {
+            color: black;
+          }
+        }
+        li {
+          width: 100%;
+          background-color: #e4e4e4;
+          transition: 0.2s;
+          padding: 10px;
+          font-size: 20px;
+          cursor: pointer;
+          &:hover {
+            transition: 0.2s;
+            font-size: 18px;
+            opacity: 0.9;
+          }
+          a {
+            color: #333;
+          }
+        }
+      }
+
       .menu {
         .menu-list {
           display: none;
@@ -14,9 +55,8 @@
       .nav-item-group {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         .menu-bar-icon {
-          margin-right: 25px;
           width: 100%;
           display: block;
           font-size: 45px;
@@ -26,6 +66,10 @@
             color: crimson;
           }
         }
+        input[type="checkbox"]:checked ~ div.menu-small {
+          transition: 0.5s;
+          display: block;
+        }
         .search-icon {
           display: flex;
           align-items: center;
@@ -33,8 +77,8 @@
           font-size: 40px;
           background-color: #f0f0f0;
           color: crimson;
-          padding: 20px 0px;
-          padding: 20px 10px;
+          padding: 20px;
+          padding-inline: 30px;
           &:hover {
             .icon {
               color: black !important;

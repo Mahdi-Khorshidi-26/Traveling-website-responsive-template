@@ -23,6 +23,15 @@
         color: crimson;
       }
     }
+    .menu-label {
+      display: none;
+    }
+    #menu-check-box {
+      display: none;
+    }
+    .menu-small {
+      display: none;
+    }
     .menu {
       grid-area: menu;
       .menu-list {
