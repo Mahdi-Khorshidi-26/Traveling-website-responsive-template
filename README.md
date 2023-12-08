@@ -1,6 +1,8 @@
 # Traveling-website-responsive-template
 this is a responsive grid designed template that helps you to learn how to use grid templates and it's a nice and beautiful traveling website :
 and this is how it looks like in different devices :
+see and try the site output online :
+https://mahdi-khorshidi-26.github.io/Traveling-website-responsive-template/
 
 desktop:
 
